@@ -1,0 +1,27 @@
+# directory tree :
+src
+src/com
+src/com/arcsoft
+src/com/arcsoft/Person.java
+src/com/arcsoft/school
+src/com/arcsoft/school/Student.java
+src/com/arcsoft/test
+src/com/arcsoft/test/Hello.java
+src/com/arcsoft/test/PrimaryStudent.java
+src/jar.arg
+src/README
+build
+build/com
+build/com/arcsoft
+build/com/arcsoft/Person.class
+build/com/arcsoft/school
+build/com/arcsoft/school/Student.class
+build/com/arcsoft/test
+build/com/arcsoft/test/Hello.class
+build/com/arcsoft/test/PrimaryStudent.class
+bin
+bin/Hello.jar
+# in the bin directory run jar
+jar -cfe Hello.jar com.arcsoft.test.Hello -C ../build .
+# equals to run this:
+jar @../src/jar.arg

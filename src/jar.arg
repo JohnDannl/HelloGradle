@@ -1,0 +1,1 @@
+-cfe Hello.jar com.arcsoft.test.Hello -C ../build .
