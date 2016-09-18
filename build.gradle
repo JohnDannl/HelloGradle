@@ -15,3 +15,8 @@ task test(dependsOn:[compile, compileTest]) << {
 task dist(dependsOn:[compile, test]) << {
     println 'building the distribution'
 }
+
+task getHomeDir << {
+    println gradle.gradleHomeDir
+    println gradle.gradleUserHomeDir
+}
