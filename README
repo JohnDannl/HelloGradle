@@ -1,27 +1,31 @@
 # directory tree :
-src
-src/com
-src/com/arcsoft
-src/com/arcsoft/Person.java
-src/com/arcsoft/school
-src/com/arcsoft/school/Student.java
-src/com/arcsoft/test
-src/com/arcsoft/test/Hello.java
-src/com/arcsoft/test/PrimaryStudent.java
-src/jar.arg
-src/README
-build
-build/com
-build/com/arcsoft
-build/com/arcsoft/Person.class
-build/com/arcsoft/school
-build/com/arcsoft/school/Student.class
-build/com/arcsoft/test
-build/com/arcsoft/test/Hello.class
-build/com/arcsoft/test/PrimaryStudent.class
+./src
+./src/com
+./src/com/arcsoft
+./src/com/arcsoft/Person.java
+./src/com/arcsoft/staff
+./src/com/arcsoft/staff/Staff.java
+./src/com/arcsoft/test
+./src/com/arcsoft/test/Hello.java
+./src/com/arcsoft/test/PrimaryStaff.java
+./src/jar.arg
+./src/sub.gra
+./build
+./build/com
+./build/com/arcsoft
+./build/com/arcsoft/Person.class
+./build/com/arcsoft/staff
+./build/com/arcsoft/staff/Staff.class
+./build/com/arcsoft/test
+./build/com/arcsoft/test/Hello.class
+./build/com/arcsoft/test/PrimaryStaff.class
 bin
 bin/Hello.jar
+# compile in the parent directory of src
+javac -sourcepath src src/com/arcsoft/test/Hello.java -d ./build
 # in the bin directory run jar
 jar -cfe Hello.jar com.arcsoft.test.Hello -C ../build .
 # equals to run this:
 jar @../src/jar.arg
+# run in the parent directory of bin
+java -jar bin/Hello.jar
