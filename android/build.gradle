@@ -18,12 +18,23 @@ android {
     buildToolsVersion "23.0.1"
 	
 	defaultConfig {
-        applicationId "com.arcsoft.hellogradle.test"
+        applicationId "com.arcsoft.hellogradle"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
 		}
+		
+	buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+        }
+
+        debug_ant {
+            initWith(buildTypes.debug)
+            applicationIdSuffix ".ant"
+        }		
+    }
 }
 
 
