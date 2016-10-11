@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HelloGradle</string>
     <string name="str_hello_gradle">Hello Gradle!</string>
+	<string name="str_hello_fm">Hello %1$s!</string>
 </resources>

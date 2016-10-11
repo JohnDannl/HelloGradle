@@ -14,10 +14,13 @@
         android:id="@+id/tv_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+		android:textSize="24sp"
+		android:layout_marginBottom="20dip"
 		android:layout_centerHorizontal="true"
 		android:text="@string/str_hello_gradle" />
 	
 	<ImageView
+		android:id="@+id/iv_icon"
         android:layout_below="@+id/tv_hello"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
